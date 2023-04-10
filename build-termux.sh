@@ -41,7 +41,7 @@ if [ -d revanced-magisk-module ]; then
 	fi
 else
 	pr "Cloning revanced-magisk-module."
-	git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
+	git clone https://github.com/New-Dev3/revanced-magisk-module --recurse --depth 1
 	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-magisk-module/config*toml
 fi
 cd revanced-magisk-module
